@@ -1,0 +1,18 @@
+html {
+    font-size:medium;
+}
+body {
+    background-color: #a8cacb;
+    color: rgb(30, 29, 29);
+}
+a {
+    color: rgb(53, 2, 235);
+}
+
+a:visited {
+    color: rgb(96, 96, 96);
+}
+
+a:hover, a:active {
+    color: rgb(130, 11, 243);
+}
