@@ -1,0 +1,246 @@
+/* Reset CSS */
+body {
+    margin: 0;
+    font-family:monospace;
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    min-height: 100vh; /* Pastikan body mengambil tinggi penuh viewport */
+}
+
+
+/* Menubar */
+.menubar {
+    width: 72px; /* Lebar default menubar (kecil) */
+    background-color: #202020;
+    color: #fff;
+    margin: 10px;
+    max-height: 100vh;
+    padding: 12px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+}
+
+
+/* Memperbesar menubar saat dihover */
+.menubar:hover {
+    width: 240px; /* Lebar menubar saat diperbesar */
+}
+
+/* Menampilkan teks saat menubar dihover */
+.menubar:hover .Logoapp span,
+.menubar:hover .logo span,
+.menubar:hover .main-menu span,
+.menubar:hover .secondary-menu span,
+.menubar:hover .footer-menu {
+    display: inline; /* Tampilkan teks */
+}
+
+/* Pusatkan ikon saat menubar kecil */
+.menubar:not(:hover) .logo,
+.menubar:not(:hover) .main-menu li,
+.menubar:not(:hover) .secondary-menu li {
+    justify-content: center;
+}
+
+.Logoapp {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Logoapp i{
+    margin-right: 10px;
+    background-color: #efeefa;
+    border-radius: 24px;
+}
+.Logoapp img{
+    width: 34px;
+    background-color: #efeefa;
+    border-radius: 12px;
+}
+
+.Logoapp span{
+    display: none; /* Sembunyikan teks default */
+}
+
+/* Logo YouTube */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.logo i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b00f9;
+    display: none; /* Sembunyikan teks default */
+}
+
+/* Menu Utama dan Sekunder */
+.main-menu, .secondary-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li, .secondary-menu li {
+    margin-bottom: 10px;
+}
+
+.main-menu a, .secondary-menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.main-menu a:hover, .secondary-menu a:hover {
+    background-color: #383838;
+}
+
+.main-menu i, .secondary-menu i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.main-menu span, .secondary-menu span {
+    display: none; /* Sembunyikan teks default */
+}
+
+/* Footer Menu */
+.footer-menu {
+    margin-top: auto;
+    padding: 10px;
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    display: none; /* Sembunyikan teks default */
+}
+
+/* Menu Pencarian */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    padding: 8px 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 12;
+    padding: 8px;
+    background: transparent;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Konten Utama */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.content2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 46px;
+    font-weight: bolder;
+    padding: 1px;
+    background: linear-gradient(180deg, #2c03f5, #f9f9f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.content3 {
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    background-color: #1500f87b;
+    color: #fff;
+    font-family:monospace;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 2px;
+    border-radius: 8px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.isi3 {
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.isi3 img{
+    width: 72px;
+}
+.isi3 img:hover{
+    width: 95px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.isi31 {
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.isi31 img{
+    width: 72px;
+}
+
+.isi31 img:hover{
+    width: 95px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.isi311 {
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.isi311 img{
+    width: 72px;
+}
+
+.isi311 img:hover{
+    width: 95px;
+    background-color: #fff;
+    border-radius: 8px;
+}
