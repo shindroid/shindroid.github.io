@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family:monospace;
     display: flex; /* Menggunakan flexbox untuk tata letak */
-    min-height: 100vh; /* Pastikan body mengambil tinggi penuh viewport */
 }
 
 
@@ -182,9 +181,10 @@ body {
 
 .content3 {
     display: flex;
-    height: 130px;
+    height: 250px;
     justify-content: center;
     background-color: #1500f87b;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
     font-family:monospace;
     font-size: 18px;
@@ -193,6 +193,7 @@ body {
     border-radius: 8px;
     overflow-y: auto;
     text-align: center;
+    outline: none;
 }
 
 .isi3 {
@@ -201,11 +202,11 @@ body {
     text-align: center;
 }
 .isi3 img{
-    width: 72px;
+    width: 200px;
 }
 .isi3 img:hover{
-    width: 95px;
-    background-color: #fff;
+    width: 210px;
+    background-color: #8e8ba9;
     border-radius: 8px;
 }
 
@@ -215,12 +216,12 @@ body {
     text-align: center;
 }
 .isi31 img{
-    width: 72px;
+    width: 200px;
 }
 
 .isi31 img:hover{
-    width: 95px;
-    background-color: #fff;
+    width: 210px;
+    background-color: #8e8ba9;
     border-radius: 8px;
 }
 
