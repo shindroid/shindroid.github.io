@@ -8,6 +8,17 @@
     <link rel="icon" href="iconshin.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="main.css">
+    <script>
+        // Cek status login
+        document.addEventListener('DOMContentLoaded', function() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn !== 'true') {
+                // Jika belum login, redirect ke halaman login
+                window.location.href = 'index.html'; // Ganti dengan URL halaman login Anda
+            }
+        });
+    </script>
+
 </head>
 <body>
     <div class="menubar">
